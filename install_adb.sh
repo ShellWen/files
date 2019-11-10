@@ -53,7 +53,7 @@ init()
         ;;
     esac
     # 自动清理目录
-    if [ ! -d ${WORK_DIR} ];then
+    if [ -d ${WORK_DIR} ];then
         rm -rf ${WORK_DIR}
         echo -e "${GREEN}已删除之前运行的临时文件夹${RES}"
     fi
